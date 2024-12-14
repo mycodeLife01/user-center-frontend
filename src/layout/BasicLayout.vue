@@ -15,7 +15,7 @@ userCurrent().then((res) => {
         <router-view></router-view>
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://www.codefather.cn/" target="_blank">特别鸣谢 : 编程导航</a>
+        <a href="https://www.codefather.cn/" target="_blank">友链 : 编程导航</a>
       </a-layout-footer>
     </a-layout>
   </div>
