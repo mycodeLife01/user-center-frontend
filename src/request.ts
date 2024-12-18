@@ -25,14 +25,14 @@ myAxios.interceptors.response.use(
 
     const { data } = response
     console.log(data)
-    if (data.code === 40100) {
-      if (
-        !response.request.responseURL.includes('/user/current') &&
-        !window.location.pathname.includes('/user/login')
-      ) {
-        window.location.href = `/user/login?redirect=${window.location.href}`
-      }
-    }
+    // if (data.code === 40100) {
+    //   if (
+    //     !response.request.responseURL.includes('/user/current') &&
+    //     !window.location.pathname.includes('/user/login')
+    //   ) {
+    //     window.location.href = `/user/login?redirect=${window.location.href}`
+    //   }
+    // }
     return response
   },
   function (error) {
